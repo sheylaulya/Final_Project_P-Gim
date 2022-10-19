@@ -20,7 +20,7 @@
 session_start();
 
 if(isset($_SESSION['loggedIN'])){
-    header('Location: LS.php');
+    header('Location: index.php');
     exit();
 }
     if(isset($_POST['login'])){
@@ -47,10 +47,8 @@ if(isset($_SESSION['loggedIN'])){
     <meta charset="utf-8">
     <title>Register</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet" 
-</head> 
-
-    <body>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet" </head> <body
+        onload="startGame()">
     <div class="main">
         <input type="checkbox" id="chk" aria-hidden="true">
 
@@ -60,14 +58,14 @@ if(isset($_SESSION['loggedIN'])){
                 <div class="loginnih"></div>
                 <input type="text" name="username" placeholder="username" id="username2" required="">
                 <input type="password" name="pswd" placeholder="Password" id="password2" required="">
-                <button id="login">Login</button>
+                <button id="login" onclick="mulai()">Login</button>
             </form>
         </div>
 
         <div class="signup">
             <form autocomplete="off" action="index.php" method="post" class="form1">
                 <label for="chk" aria-hidden="true">Sign up</label>
-                <div class="inisignup">
+                <div class="indexsignup">
                     <input type="text" id="username" name="txt" placeholder="User name" required="">
                     <input type="email" id="email" name="email" placeholder="Email" required="">
                     <input type="password" id="password" name="pswd" placeholder="Password" required="">
@@ -153,7 +151,7 @@ if(isset($_SESSION['loggedIN'])){
 
 
                             if (response.indexOf('success') >= 0)
-                                window.location = 'LS.php';
+                                window.location = 'index.php';
                         },
                         dataType: 'text '
                     })
@@ -162,6 +160,14 @@ if(isset($_SESSION['loggedIN'])){
 
             })
         })
+
+        function startGame() {
+        let content = document.getElementsByClassname("main");
+        content.remove();
+        myGamePiece = new component(30, 30, "red", 10, 120);
+        myGameArea.start();
+        }
+
     </script>
 
     </body>
