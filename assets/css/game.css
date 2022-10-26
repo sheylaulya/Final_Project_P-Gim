@@ -1,0 +1,255 @@
+body{
+  margin: 0px;
+  background-color: #4658ad;
+  overflow: hidden;
+}
+*{
+  font-family: 'quicksand', sans-serif;
+}
+
+canvas{
+  position: absolute;
+  z-index: 2;
+  width: 500px;
+  height: 260px;
+  top: 31%;
+  left: 31%;
+  border-radius: 10px;
+}
+
+#content{
+  position: absolute;
+  top: 31%;
+  left: 31%;
+  box-sizing: border-box;
+}
+#card-content{
+  width: 32.5vw;
+  height: 34vh;
+  background-color: rgb(255, 179, 49);
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+#myfilter{
+  position: absolute;
+  top: 31%;
+  left: 31%;
+  box-sizing: border-box;
+  width: 32.54vw;
+  height: 34.1vh;
+  background-color: rgb(0, 0, 0);
+  opacity: .4;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  z-index: 4;
+}
+#load{
+  position: absolute;
+  top: 31%;
+  left: 31%;
+  box-sizing: border-box;
+  width: 32.54vw;
+  height: 34.1vh;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  font-size: 70px;
+  font-family: 'silkscreen';
+}
+.username{
+  display: flex;
+  align-items: center;
+  height: 45px;
+  top: 31.5%;
+  left: 31.5%;
+  z-index: 3;
+  position: absolute;
+}
+#jdl-card{
+  position: absolute;
+  left: 250px;
+  top: -102px;
+  width: 215px;
+  height: 18px;
+  background-color: #e3e3e3;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 10px 0px 0px 20px;
+  border-radius: 15px 15px 0px 0px;
+  padding-bottom: 25px;
+  font-family: 'Silkscreen', cursive;
+}
+#user{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+#user-title{
+  margin-left: 5px;
+  font-weight: 700;
+}
+#player{
+  font-weight: 700;
+}
+#bg{
+  width: 1100px;
+  position: absolute;
+  top: -6%;
+  left: 13.2%;
+  z-index: -999;
+}
+.choose{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.choose label{
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: 'Silkscreen', cursive;
+}
+/* #style1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 120px;
+  margin-top: 10px;
+  margin-left: 29px;
+  height: 90px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#style1::-webkit-color-swatch {
+  border-radius: 15px;
+  border: none;
+}
+#style1::-moz-color-swatch {
+  border-radius: 15px;
+  border: none;
+} */
+#style1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  margin-left: 49px;
+  border: none;
+  cursor: pointer;
+}
+#style1::-webkit-color-swatch {
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+#style1::-moz-color-swatch {
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+
+.button{
+  margin-top: -120px;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+.start-game input{
+  border: none;
+  background-color: rgb(72, 140, 241);
+  padding: 10px;
+  width: 150px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: 'Silkscreen', cursive;
+}
+.log-out input{
+  border: none;
+  background-color: rgb(241, 72, 72);
+  padding: 10px;
+  width: 150px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: 'Silkscreen', cursive;
+}
+#content-canvas{
+  position: absolute;
+}
+#btn-canvas{
+  display: flex;
+  position: absolute;
+  top: 60%;
+  left: 32%;
+  gap: 330px;
+  z-index: 5;
+}
+#btn-try{
+  border: none;
+  background-color: rgb(72, 140, 241);
+  padding: 3px;
+  width: 90px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+#btn-exit{
+  border: none;
+  background-color: rgb(241, 72, 72);
+  padding: 3px;
+  width: 50px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#game-over{
+  font-family: 'silkscreen', cursive;
+  font-size: 30px;
+  position: absolute;
+  top: -157px;
+  left: 140px;
+  cursor: default;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  background-color: rgba(33, 33, 33, 0.334);
+  top: 93.5%;
+  z-index: 1;
+  font-size: 15px;
+  font-family: 'Quicksand';
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0px 20px 0px 20px;
+}
+
+.sosmed{
+  margin: 15px 0px 0px 0px;
+  display: flex;
+  gap: 15px;
+}
+
+button{
+  cursor: pointer;
+}

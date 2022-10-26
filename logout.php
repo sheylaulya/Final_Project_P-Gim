@@ -1,8 +1,8 @@
 <?php
-session_start();
 
-unset($_SESSION['loggedIN']);
+include 'db.php';
+
+unset($_SESSION);
 session_destroy();
-header('Location: index.php');
-exit();
-?>  
+
+header("location:index.php");
