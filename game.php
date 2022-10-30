@@ -41,19 +41,16 @@ $row = mysqli_fetch_assoc($res);
   <div id="myfilter" style="display: none;"></div>
   <div id="load" style="display: none;"><img src="assets/img/load.gif" alt=""></div>
     <div class="username">
-      <img src="assets/img/profile.png" alt="" id="user">
+      <img src="https://cdn-icons-png.flaticon.com/512/924/924915.png" alt="" id="user">
       <p id="player">Player : <?php echo $row['username']?>#<?php echo $row['id'];?></p>
     </div>
     <div>
-      <img src="assets/img/background-game.jpg" alt="" id="bg">
+
     </div>
     <div id="content">
       <div id="card-content">
-        <div id="tilte">
-          <p id="jdl-card">Flutter Bird</p>
-        </div>
         <div class="choose">
-          <label for="style1">Choose color : </label>
+          <label for="style1">Choose Your Hero : </label>
           <input type="color" value="#ff0000" id="style1" />
         </div>
         <div class="button" style="display:flex; ">
@@ -68,18 +65,14 @@ $row = mysqli_fetch_assoc($res);
         </div>
       </div>
     </div>
+    
     <div id="btn-canvas">
       <p id="game-over" style="display: none;">Game over</p>
       <button onclick="restart()" style="display: none;" id="btn-try">Try Again</button>
       <button onclick="exit()" style="display: none;" id="btn-exit">Exit</button>
     </div>
     <footer>
-      <p> Copyright ©2022 All rights reserved | This template is made with by DivadanArya |</p>
-      <div class="sosmed">
-        <a href=""><i class="fa-brands fa-facebook-f" style="color: black; opacity: .6; font-size: 18px;"></i></a>
-        <a href="https://www.instagram.com/divdannn_/"><i class="fa-brands fa-instagram" style="color: black; opacity: .6; font-size: 18px;"></i></a>
-        <a href=""><i class="fa-brands fa-twitter" style="color: black; opacity: .6; font-size: 18px;"></i></a>
-      </div>
+    <p> Copyright ©2022 All rights reserved | Design By Sheyla Aulya |</p>
     </footer>
   </div>
   <script src="assets/javascript/game.js"></script>

@@ -8,7 +8,7 @@
 <head>
    <meta charset="utf-16">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Flutter bird</title>
+   <title>Flappy Square</title>
    <!-- title icon -->
    <link href='assets/img/icon-title.png' rel='shortcut icon'>
    <!-- css -->
@@ -69,7 +69,7 @@
             <input type="text" name="Login_user" placeholder="username" id="name-user" autocomplete="off"
                class="username">
             <label for="password">Password </label>
-            <input name="password" type="password" placeholder="Password" class="username" />
+            <input name="login_password" type="password" placeholder="Password" class="username" />
             <p class="check-mark">
                <input type="checkbox" id="accept-terms">
                <label for="accept-terms">I agree to the <a href="#">Terms</a></label>
@@ -82,7 +82,7 @@
    <!--.main-popup-->
 
    <footer>
-      <p> Copyright ©2022 All rights reserved | This template is made with by DivadanArya |</p>
+      <p> Copyright ©2022 All rights reserved | Design By Sheyla Aulya |</p>
       <div class="sosmed">
          <a href=""><i class="fa-brands fa-facebook-f" style="color: black; opacity: .6; font-size: 18px;"></i></a>
          <a href="https://www.instagram.com/divdannn_/"><i class="fa-brands fa-instagram"

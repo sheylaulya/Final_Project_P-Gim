@@ -1,7 +1,9 @@
 body{
   margin: 0px;
-  background-color: #4658ad;
+  background-image: url(https://resi.ze-robot.com/dl/de/desert-landscape-1920%C3%971080.jpg);
+  background-position: bottom-;
   overflow: hidden;
+  background-size: cover;
 }
 *{
   font-family: 'quicksand', sans-serif;
@@ -10,10 +12,10 @@ body{
 canvas{
   position: absolute;
   z-index: 2;
-  width: 500px;
-  height: 260px;
-  top: 31%;
-  left: 31%;
+  width: 700px;
+  height: 280px;
+  top: 31.5%;
+  left: 24.5%;
   border-radius: 10px;
 }
 
@@ -24,20 +26,23 @@ canvas{
   box-sizing: border-box;
 }
 #card-content{
-  width: 32.5vw;
+  width: 50vw;
   height: 34vh;
-  background-color: rgb(255, 179, 49);
+  background-color: rgb(255, 226, 226);
   padding: 20px;
   border-radius: 10px;
   box-sizing: border-box;
+  margin-left: -5vw;
+  margin-top: 20px;
+  opacity: 0.9;
 }
 #myfilter{
   position: absolute;
   top: 31%;
-  left: 31%;
+  left: 25%;
   box-sizing: border-box;
-  width: 32.54vw;
-  height: 34.1vh;
+  width: 700px;
+  height: 280px;
   background-color: rgb(0, 0, 0);
   opacity: .4;
   padding: 20px;
@@ -90,13 +95,20 @@ canvas{
   width: 40px;
   height: 40px;
   margin-right: 10px;
+  position: relative;
+  left: -70px;
+  top: 20px;
+  
 }
 #user-title{
   margin-left: 5px;
+  position: relative;
   font-weight: 700;
 }
 #player{
   font-weight: 700;
+  margin-top: 60px;
+  margin-left: -70px;
 }
 #bg{
   width: 1100px;
@@ -109,6 +121,7 @@ canvas{
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+  margin-left: 15vw;
 }
 .choose label{
   font-weight: 700;
@@ -117,26 +130,10 @@ canvas{
   margin-top: 10px;
   font-family: 'Silkscreen', cursive;
 }
-/* #style1 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 120px;
-  margin-top: 10px;
-  margin-left: 29px;
-  height: 90px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+.choose input{
+  position: relative;
+  left: 10px;
 }
-#style1::-webkit-color-swatch {
-  border-radius: 15px;
-  border: none;
-}
-#style1::-moz-color-swatch {
-  border-radius: 15px;
-  border: none;
-} */
 #style1 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -175,6 +172,8 @@ canvas{
   font-size: 15px;
   cursor: pointer;
   font-family: 'Silkscreen', cursive;
+  margin-left: -15vw;
+  margin-top: 5vh;
 }
 .log-out input{
   border: none;
@@ -186,6 +185,9 @@ canvas{
   font-size: 15px;
   cursor: pointer;
   font-family: 'Silkscreen', cursive;
+  margin-left: 15vw;
+  position: relative;
+  top: -10vh;
 }
 #content-canvas{
   position: absolute;
@@ -221,19 +223,20 @@ canvas{
 
 #game-over{
   font-family: 'silkscreen', cursive;
-  font-size: 30px;
+  font-size: 50px;
   position: absolute;
   top: -157px;
-  left: 140px;
+  left: 100px;
   cursor: default;
+  color: #e3e3e3;
 }
 
 footer {
   width: 100%;
   height: 50px;
   position: fixed;
-  background-color: rgba(33, 33, 33, 0.334);
   top: 93.5%;
+  left: 33vw;
   z-index: 1;
   font-size: 15px;
   font-family: 'Quicksand';
@@ -242,6 +245,7 @@ footer {
   justify-content: space-between;
   box-sizing: border-box;
   padding: 0px 20px 0px 20px;
+  color: #e3e3e3;
 }
 
 .sosmed{

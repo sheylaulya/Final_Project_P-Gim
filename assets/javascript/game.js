@@ -17,26 +17,11 @@ var load = document.getElementById("load");
 function startGame() {
   let wrn = document.getElementById("style1").value;
   myGamePiece = new component(35, 35, wrn, 150, 180);
-  myBackground = new component(750, 420, "assets/img/backgroundCanvas.png", 0, 0, "background");
-  myScore = new component("20px", "silkscreen", "black", 520, 25, "text");
+  myBackground = new component(750, 420, "https://th.bing.com/th/id/R.e148a7c9d0bf08d05f0585326d536e28?rik=pvE9IEBRMVnfZA&riu=http%3a%2f%2fpavbca.com%2fwalldb%2foriginal%2f9%2ff%2fc%2f418445.jpg&ehk=%2buocpeE1NCzB00ROpDnEU0W5b1R3%2fTzeA7WYZRV9ixc%3d&risl=&pid=ImgRaw&r=0", 0, 0, "background");
+  myScore = new component("20px", "silkscreen", "white", 520, 25, "text");
   myObstacles = [];
   myGameArea.start();
 }
-
-// function startGame() {
-//   let wrnLoad = document.getElementById("style1").value;
-//   load.removeAttribute("style");
-//   load.style = "background-color:" + wrnLoad + ";";
-//   // myGameArea.stop();
-//   setTimeout(() => {    
-//     let wrn = document.getElementById("style1").value;
-//     myGamePiece = new component(35, 35, wrn, 150, 180);
-//     myBackground = new component(750, 420, "assets/img/backgroundCanvas.png", 0, 0, "background");
-//     myScore = new component("22px", "silkscreen", "black", 525, 27, "text");
-//     myObstacles = [];
-//     myGameArea.start();
-//   }, 3000);
-// }
 
 // restart game
 function restart() {

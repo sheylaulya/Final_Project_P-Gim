@@ -53,15 +53,14 @@ html, * {
  .underline {
    position: absolute;
    height: 4px;
-   background-color: #16213E;
+   background-color: #411530;
    transition: all 0.5s ease;
  }
  
  .container {
    width: 90%;
    height: 80vh;
-   background-image: url(https://images6.alphacoders.com/885/885542.png);
-   background-position: left bottom;
+   background-image: url(https://external-preview.redd.it/bWD0W1epNnxJdGTvBmA-irrLAGWEyliwIdQBEAjQlRc.png?auto=webp&s=6f64e9249ebf10952a912eadcc1f4d938c9c5579);
    border-radius: 5px;
    z-index: 2;
    margin: auto;
@@ -77,7 +76,7 @@ html, * {
    margin: -35px 0 0 -100px;
    padding: 15px 30px;
    border-radius: 5px;
-   background-color: #16213E;
+   background-color: #411530;
    color: #fff;
    font-size: 1.5em;
    cursor: pointer;
@@ -210,24 +209,24 @@ html, * {
  }
  
  #sign-in {
-   background-color: #16213E;
+   background-color: #411530;
    color: #fff;
    border-radius: 5px 0 0 0;
  }
  
  #sign-in.active {
-   color: #16213E;
+   color: #411530;
    background-color: transparent;
  }
  
  #register {
-   background-color: #16213E;
+   background-color: #411530;
    color: #fff;
    border-radius: 0 5px 0 0;
  }
  
  #register.active {
-   color: #16213E;
+   color: #411530;
    background-color: transparent;
  }
  
@@ -255,7 +254,7 @@ html, * {
  
  form label {
    font-size: 1.1em;
-   color: #16213E;
+   color: #411530;
    margin-left: 23px;
  }
  
@@ -266,13 +265,13 @@ html, * {
    margin: 5px 5% 30px 5%;
    padding: 10px;
    font-size: 1em;
-   color: #16213E;
+   color: #411530;
    outline: none;
    border: none;
  }
  
  input#submit {
-   background-color: #16213E;
+   background-color: #411530;
    color: #fff;
    height: 50px;
    width: 90%;
@@ -312,7 +311,7 @@ html, * {
    margin: 5px 5% 15px 5%;
    padding: 10px;
    font-size: 1em;
-   color: #16213E;
+   color: #411530;
    outline: none;
    border: none;
  }
@@ -324,7 +323,7 @@ html, * {
    margin: 0 0 0 -100px;
    padding: 0;
    text-align: center;
-   color: #16213E;
+   color: #411530;
    font-size: .8em;
  }
  
@@ -346,4 +345,10 @@ html, * {
  
  p.check-mark label {
    margin-left: 5px;
+ }
+
+ footer p{
+  color: #ccc;
+  position: relative;
+  left: 33vw;
  }
